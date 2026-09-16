@@ -1,4 +1,4 @@
-# DeepSeek C64 v10h Text
+# C64 v10h Text
 
 PAL C64 text-mode demo with a custom charset, centered logo, gradient colors,
 raster bars, bottom scroller, and SID arpeggio.
@@ -11,15 +11,15 @@ Requires ACME 0.97 or newer. The build is self-contained and offline:
 make
 ```
 
-Output: `build/deepseek_c64_v10h_text.prg`. Run with:
+Output: `build/c64_centered_text_raster_scroller.prg`. Run with:
 
 ```sh
-x64sc -autostart build/deepseek_c64_v10h_text.prg
+x64sc -autostart build/c64_centered_text_raster_scroller.prg
 ```
 
 ## Repository layout
 
-- `deepseek_c64_v10h_text.s` — corrected source.
+- `c64_centered_text_raster_scroller.s` — corrected source.
 - `custom_charset_1bpp.bin` — recovered 2 KiB charset input.
 - `Makefile` — strict ACME build and clean targets.
 - `AUDIT.md` — issue-by-issue repair record.

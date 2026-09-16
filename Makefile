@@ -1,8 +1,8 @@
 .PHONY: all clean
 
 ACME ?= acme
-OUTPUT := build/deepseek_c64_v10h_text.prg
-SOURCE := deepseek_c64_v10h_text.s
+OUTPUT := build/c64_centered_text_raster_scroller.prg
+SOURCE := c64_centered_text_raster_scroller.s
 
 all: $(OUTPUT)
 
