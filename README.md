@@ -1,5 +1,9 @@
 # C64 v10h Text
 
+![C64 effect preview](docs/preview.png)
+
+Visual preview asset for this effect; run the VICE command below for an emulator capture.
+
 PAL C64 text-mode demo with a custom charset, centered logo, gradient colors,
 raster bars, bottom scroller, and SID arpeggio.
 
