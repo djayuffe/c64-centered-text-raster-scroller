@@ -1,16 +1,32 @@
-# DeepSeek v10h text-only source
+# DeepSeek C64 v10h Text
 
-PAL C64 text-mode demo with custom charset, centered logo, gradient colors,
+PAL C64 text-mode demo with a custom charset, centered logo, gradient colors,
 raster bars, bottom scroller, and SID arpeggio.
 
-## Build and run
+## Build
+
+Requires ACME 0.97 or newer. The build is self-contained and offline:
 
 ```sh
-acme --strict-segments -I . -f cbm -o v10h_text_only.prg \
-  deepseek_asm_20251009_v10h_text_only_stable_nowarn_v2.s
-x64sc -autostart v10h_text_only.prg
+make
 ```
 
-The charset extracted from the supplied PRG is checked in. The audit repairs
-the centered-row routine, character-ROM source address, `$D018` screen/charset
-selection, and CIA interrupt masking.
+Output: `build/deepseek_c64_v10h_text.prg`. Run with:
+
+```sh
+x64sc -autostart build/deepseek_c64_v10h_text.prg
+```
+
+## Repository layout
+
+- `deepseek_c64_v10h_text.s` — corrected source.
+- `custom_charset_1bpp.bin` — recovered 2 KiB charset input.
+- `Makefile` — strict ACME build and clean targets.
+- `AUDIT.md` — issue-by-issue repair record.
+- `SHA256SUMS.txt` — checksums for tracked files.
+
+## Audit summary
+
+The audit fixed centered-row state loss, the character-ROM source address,
+`$D018` screen/charset selection, and CIA interrupt masking. The corrected
+image retains the original `SYS 6144` contract.

@@ -1,8 +1,8 @@
 .PHONY: all clean
 
 ACME ?= acme
-OUTPUT := build/v10h_text_only.prg
-SOURCE := deepseek_asm_20251009_v10h_text_only_stable_nowarn_v2.s
+OUTPUT := build/deepseek_c64_v10h_text.prg
+SOURCE := deepseek_c64_v10h_text.s
 
 all: $(OUTPUT)
 
