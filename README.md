@@ -1,4 +1,4 @@
-# C64 v10h Text
+# C64 - Centered Text Raster Scroller
 
 ![C64 effect preview](docs/preview.png)
 
