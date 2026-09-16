@@ -30,3 +30,7 @@ x64sc -autostart build/c64_centered_text_raster_scroller.prg
 The audit fixed centered-row state loss, the character-ROM source address,
 `$D018` screen/charset selection, and CIA interrupt masking. The corrected
 image retains the original `SYS 6144` contract.
+## Documentation and license
+
+Function-level documentation is in docs/FUNCTIONS.md. The project is released
+under GPL-3.0; see LICENSE.
